@@ -221,3 +221,14 @@ input,
 .button-container .button-20 {
   flex: 20%;
 }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.positioning > h1 {
+  color: rgba(51, 51, 51, 0.4);
+  font-size: 3em;
+}
