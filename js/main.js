@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#creator").on("click", function () {
-    window.location.href = "../";
+  $("#item-creator").on("click", function () {
+    window.location.href = "../html/create.html";
   });
 });
