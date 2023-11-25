@@ -146,9 +146,44 @@ input,
   box-sizing: border-box;
 }
 
-input {
-  /* MAKE INPUTS LOOK GOODDER */
+#title,
+#price {
+  border-style: solid;
 }
+
+/* IMAGE FORM */
+
+.hidden-input {
+  display: none;
+}
+
+.custom-label {
+  padding: 10px;
+  margin: 0 0 16px;
+
+  width: 40%;
+
+  text-align: center;
+
+  background-color: #fa8072;
+
+  color: #333;
+  font-weight: bold;
+
+  border: 2px solid #333;
+
+  cursor: pointer;
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-label:hover {
+  background-color: #d9534f;
+  color: #faebd7;
+}
+
+/* BUTTON FORM */
 
 .button-form {
   background-color: #fa8072;
