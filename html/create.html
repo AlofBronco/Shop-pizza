@@ -19,12 +19,13 @@
 
           <h1>Item Creator</h1>
 
-          <button id="button-header" onclick="showModal()">Create Item</button>
+          <button id="button-header" onclick="showModal();">Create Item</button>
         </header>
         <main>
           <div class="positioning">
             <h1>You don't have any items right now</h1>
           </div>
+          <div class="grid"></div>
         </main>
       </div>
       <div class="modal">
@@ -38,12 +39,20 @@
 
             <div class="img-form">
               <label for="fileInput" class="custom-label">Choose an Image</label>
-              <input type="file" id="fileInput" class="hidden-input" />
+              <input type="file" id="fileInput" class="hidden-input" required />
             </div>
 
             <div class="button-container">
-              <button type="submit" class="button-form button-80">Upload</button>
-              <button class="button-form button-20" onclick="modalHide()">Cancel</button>
+              <button
+                type="button"
+                class="button-form button-80"
+                onclick="uploadItem(); removeText();"
+              >
+                Upload
+              </button>
+              <button type="button" class="button-form button-20" onclick="modalHide()">
+                Cancel
+              </button>
             </div>
           </form>
         </div>
