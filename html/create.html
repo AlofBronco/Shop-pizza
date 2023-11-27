@@ -15,11 +15,11 @@
     <div class="wrapper">
       <div class="wrapper-body">
         <header>
-          <button id="button-back">Go Back</button>
+          <button id="button-back" onclick="goBack()">Go Back</button>
 
           <h1>Item Creator</h1>
 
-          <button id="button-header">Create Item</button>
+          <button id="button-header" onclick="showModal()">Create Item</button>
         </header>
         <main>
           <div class="positioning">
@@ -43,7 +43,7 @@
 
             <div class="button-container">
               <button type="submit" class="button-form button-80">Upload</button>
-              <button class="button-form button-20">Cancel</button>
+              <button class="button-form button-20" onclick="modalHide()">Cancel</button>
             </div>
           </form>
         </div>

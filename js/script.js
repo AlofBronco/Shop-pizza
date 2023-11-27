@@ -1,13 +1,13 @@
-$(document).ready(function () {
-  $("#button-header").on("click", function () {
-    $(".modal").css("display", "flex");
-  });
+function goBack() {
+  window.location.href = "../html/index.html";
+}
 
-  $(".button-20").on("click", function () {
-    $(".modal").css("display", "none");
-  });
+function showModal() {
+  let modal = document.querySelector(".modal");
+  modal.style.display = "flex";
+}
 
-  $("#button-back").on("click", function () {
-    window.location.href = "../html/index.html";
-  });
-});
+function modalHide() {
+  let modal = document.querySelector(".modal");
+  modal.style.display = "none";
+}
