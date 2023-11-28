@@ -12,7 +12,8 @@ body {
 }
 
 header,
-.telephone {
+.telephone,
+.location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,28 @@ header {
   height: 10%;
 }
 
-#telephone {
+#telephone-img,
+#location-img {
+  margin-right: 10px;
+}
+
+#telephone,
+#location,
+#pizza-sushi-track {
   color: #fff;
+}
+
+#location,
+#pizza-sushi-track {
+  font-weight: bold;
+}
+
+#pizza-sushi-track-a {
+  text-decoration: none;
+}
+
+.telephone,
+.location,
+.pizza-sushi-track {
+  margin-right: 40px;
 }
