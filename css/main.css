@@ -5,3 +5,25 @@
   padding: 0;
   font-family: "Rubik", sans-serif;
 }
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+header,
+.telephone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #222;
+
+  height: 10%;
+}
+
+#telephone {
+  color: #fff;
+}
