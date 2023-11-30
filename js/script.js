@@ -41,6 +41,11 @@ function uploadItem() {
     console.error("No file selected");
   }
 
+  let deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete Item";
+  deleteButton.className = "delete-button";
+  deleteButton.setAttribute("onclick", "deleteItem();");
+
   if (title.value == "" || price.value == "" || !image.files[0]) {
     alert("There is No Data");
     return;
@@ -49,7 +54,7 @@ function uploadItem() {
   let itemHolder = document.createElement("div");
   itemHolder.className = "item item" + counter;
 
-  itemHolder.append(itemImage, itemTitle, itemPrice);
+  itemHolder.append(itemImage, itemTitle, itemPrice, deleteButton);
 
   grid.append(itemHolder);
 
@@ -61,4 +66,14 @@ function uploadItem() {
 
 function removeText() {
   document.querySelector(".positioning").remove();
+}
+
+function deleteItem() {
+  var parentDiv = document.querySelector(".item");
+
+  while (parentDiv.firstChild) {
+    parentDiv.removeChild(parentDiv.firstChild);
+  }
+
+  parentDiv.parentNode.removeChild(parentDiv);
 }

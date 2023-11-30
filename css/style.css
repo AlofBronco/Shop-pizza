@@ -211,6 +211,23 @@ input,
 
 /* BUTTON FORM */
 
+.delete-button {
+  border-radius: 5px;
+  background-color: #00658e;
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+
+  padding: 10px;
+
+  border: 2px solid #fff;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .button-form {
   background-color: #00658e;
 
@@ -225,7 +242,8 @@ input,
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button-form:hover {
+.button-form:hover,
+.delete-button:hover {
   background-color: #222;
 }
 
@@ -277,4 +295,5 @@ input,
 
 .item > h2 {
   font-weight: 400;
+  margin-bottom: 15px;
 }

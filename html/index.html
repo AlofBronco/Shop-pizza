@@ -12,48 +12,147 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="telephone">
-        <svg
-          width="18"
-          height="18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          id="telephone-img"
-        >
-          <path
-            d="M17.51 13.21l-2.512-2.512c-.897-.897-2.422-.538-2.781.628-.27.808-1.166 1.256-1.974 1.077-1.794-.449-4.216-2.781-4.665-4.665-.269-.808.27-1.705 1.077-1.974 1.166-.359 1.525-1.884.628-2.781L4.77.471c-.718-.628-1.794-.628-2.422 0L.644 2.176C-1.061 3.97.824 8.725 5.04 12.94s8.971 6.19 10.765 4.396l1.705-1.705c.628-.717.628-1.794 0-2.422z"
-            fill="#fff"
-          ></path>
-        </svg>
-        <p id="telephone">0442221111</p>
+    <div class="wrapper">
+      <header>
+        <div class="info">
+          <div class="telephone">
+            <svg
+              width="18"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              id="telephone-img"
+            >
+              <path
+                d="M17.51 13.21l-2.512-2.512c-.897-.897-2.422-.538-2.781.628-.27.808-1.166 1.256-1.974 1.077-1.794-.449-4.216-2.781-4.665-4.665-.269-.808.27-1.705 1.077-1.974 1.166-.359 1.525-1.884.628-2.781L4.77.471c-.718-.628-1.794-.628-2.422 0L.644 2.176C-1.061 3.97.824 8.725 5.04 12.94s8.971 6.19 10.765 4.396l1.705-1.705c.628-.717.628-1.794 0-2.422z"
+                fill="#fff"
+              ></path>
+            </svg>
+            <p id="telephone">0442221111</p>
+          </div>
+
+          <div class="location">
+            <svg
+              viewBox="0 0 12 18"
+              fill="#fff"
+              width="18"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#fff"
+              id="location-img"
+            >
+              <path
+                d="M6 0C2.692 0 0 2.692 0 6c0 .993.248 1.978.72 2.851l4.952 8.956a.375.375 0 00.656 0l4.953-8.959A6.01 6.01 0 0012 6c0-3.308-2.692-6-6-6zm0 9C4.346 9 3 7.654 3 6s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p id="location">Київ</p>
+          </div>
+
+          <div class="pizza-sushi-track">
+            <!-- MAKE ANCHOR TO THE TRACKER PAGE -->
+            <a href="#" id="pizza-sushi-track-a"><p id="pizza-sushi-track">PIZZA TRACKER</p></a>
+          </div>
+
+          <div class="news">
+            <a href="#" id="news-a">
+              <p id="news">НОВИНИ</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="login">Увійти</button>
+
+          <button id="item-creator" onclick="itemCreator()">Item Creator</button>
+        </div>
+      </header>
+      <div class="stick">
+        <div class="sticky-text">
+          <div class="image-sticky-wrapper">
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2Fmedia%2Fimages%2Fblue-logo.png&w=256&q=75"
+              alt=""
+              class="image-sticky"
+            />
+          </div>
+          <p>Акції</p>
+          <p>Піца</p>
+          <p>Напої</p>
+          <p>Сайди</p>
+          <p>Десерти</p>
+        </div>
       </div>
 
-      <div class="location">
-        <svg
-          viewBox="0 0 12 18"
-          fill="#fff"
-          width="18"
-          height="18"
-          xmlns="http://www.w3.org/2000/svg"
-          color="#fff"
-          id="location-img"
-        >
-          <path
-            d="M6 0C2.692 0 0 2.692 0 6c0 .993.248 1.978.72 2.851l4.952 8.956a.375.375 0 00.656 0l4.953-8.959A6.01 6.01 0 0012 6c0-3.308-2.692-6-6-6zm0 9C4.346 9 3 7.654 3 6s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z"
-            fill="currentColor"
-          ></path>
-        </svg>
-        <p id="location">Kyiv</p>
-      </div>
+      <main>
+        <div class="wrapper-slider">
+          <div class="slider">
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2Fsalat%2Fsaladsareback-slider-pc-ukr.webp&w=1560&q=75"
+              alt=""
+              class="carousel-item"
+            />
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2FMafin%20za%205%20%2Fmafin-kava-slider-pc-ukr.webp&w=1200&q=75"
+              alt=""
+              class="carousel-item"
+            />
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2FBilshe%20Pits-Bilsha%20Znyzhka%2Fmorepizzasdiscountkyiv-slider-pc-ukr.webp&w=1560&q=75"
+              alt=""
+              class="carousel-item"
+            />
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2F199-169%2F169and199togo-slider-pc-ukr.webp&w=1560&q=75"
+              alt=""
+              class="carousel-item"
+            />
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FALL%20regions%2Fsous%2Fnewsauces-slider-pc-ukr.webp&w=1200&q=75"
+              alt=""
+              class="carousel-item"
+            />
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FALL%20regions%2Fkrashcha%20tsina%20chiken%2Fnewinbestpricenov2023-slider-pc-ukr.webp&w=1200&q=75"
+              alt=""
+              class="carousel-item"
+            />
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FALL%20regions%2FKrispi%2Fkrispi-slider-pc-ukr.webp&w=1560&q=75"
+              alt=""
+              class="carousel-item"
+            />
+          </div>
+        </div>
+        <div class="grid">
+          <div class="item">
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2FbeefandCrispy%2Fnew%2Fbeefandcrispy-pieces.webp&w=480&q=75"
+              alt=""
+              class="pizza"
+            />
+            <div class="pizza-information">
+              <p class="title">Піца Біф енд Кріспі</p>
+              <p class="under-title">
+                Моцарела, Болгарський перець, Помідори, Огірки мариновані, Соус Барбекю, Кріспі
+                цибулька Яловичина
+              </p>
+              <div class="button-pizza">
+                <div class="button">Стандарт</div>
+                <div class="button">Велика</div>
+                <div class="button">Екстравелика</div>
+              </div>
 
-      <div class="pizza-sushi-track">
-        <!-- MAKE ANCHOR TO THE TRACKER PAGE -->
-        <a href="#" id="pizza-sushi-track-a"><p id="pizza-sushi-track">PIZZA-SUSHI TRACKER</p></a>
-      </div>
-
-      <button id="item-creator" onclick="itemCreator()">AAA</button>
-    </header>
+              <div class="dough">
+                <p>Тісто</p>
+                <div class="button-dough">Пухке</div>
+                <div class="button-dough">Тонке</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
 
     <script src="../js/main.js"></script>
   </body>
