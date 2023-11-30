@@ -27,7 +27,7 @@ body {
 header {
   background-color: #222;
 
-  height: 80px;
+  height: 70px;
 
   display: flex;
   justify-content: space-around;
@@ -64,27 +64,6 @@ header {
   margin-right: 40px;
 }
 
-button {
-  border-radius: 22px;
-  background-color: #00658e;
-
-  color: #fff;
-  font-weight: bold;
-  font-size: 1em;
-
-  padding: 10px;
-
-  border: 2px solid #fff;
-
-  cursor: pointer;
-
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-button:hover {
-  background-color: #222;
-}
-
 #login {
   margin-right: 10px;
 }
@@ -93,9 +72,30 @@ button:hover {
   color: #d52424;
 }
 
+#login,
+#item-creator {
+  border: 1px solid #444;
+  border-radius: 22px;
+
+  color: #fff;
+  font-weight: bold;
+
+  background-color: #444;
+
+  padding: 14px;
+
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+#login:hover,
+#item-creator:hover {
+  background-color: #555;
+  border: 1px solid #555;
+}
+
 .stick {
   background-color: #fff;
-  height: 80px;
+  height: 70px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -127,7 +127,7 @@ button:hover {
 }
 
 .wrapper-slider {
-  width: 1349px;
+  width: 1100px;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 40px;
