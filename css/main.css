@@ -99,6 +99,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+
+  display: flex;
+  align-items: center;
 }
 
 .image-sticky-wrapper {
@@ -116,7 +119,7 @@ header {
 }
 
 .sticky-text {
-  width: 40%;
+  flex: 1;
   height: 100%;
 
   margin-left: 40px;
@@ -124,6 +127,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.sticky-text-animation {
+  display: inline-block;
+
+  transition: transform 0.3s ease;
+}
+
+.sticky-text-animation:hover {
+  transform: scale(1.1);
+}
+
+.cart {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper-slider {
@@ -165,8 +186,6 @@ header {
 
   overflow: hidden;
 
-  padding-bottom: 10px;
-
   transition: box-shadow 0.25s ease 0s;
 }
 
@@ -176,7 +195,7 @@ header {
 
 .pizza-information {
   text-align: center;
-  padding: 5px;
+  padding: 8px;
 }
 
 .pizza {
@@ -202,6 +221,9 @@ header {
 .button {
   border: 1px solid rgb(190, 190, 190);
   border-radius: 22px;
+
+  background-color: #fff;
+
   flex-grow: 1;
 
   font-size: 13px;
@@ -228,9 +250,12 @@ header {
   margin-right: 5px;
 }
 
-.button-dough {
+.button-dough-bort {
   border: 1px solid rgb(190, 190, 190);
   border-radius: 22px;
+
+  background-color: #fff;
+
   flex-grow: 1;
 
   font-size: 13px;

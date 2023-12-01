@@ -64,7 +64,7 @@
         <div class="buttons">
           <button id="login">Увійти</button>
 
-          <button id="item-creator" onclick="itemCreator()">Item Creator</button>
+          <button id="item-creator" onclick="itemCreator()">Творитель піц</button>
         </div>
       </header>
       <div class="stick">
@@ -76,11 +76,32 @@
               class="image-sticky"
             />
           </div>
-          <p>Акції</p>
-          <p>Піца</p>
-          <p>Напої</p>
-          <p>Сайди</p>
-          <p>Десерти</p>
+          <p class="sticky-text-animation">Акції</p>
+          <p class="sticky-text-animation">Піца</p>
+          <p class="sticky-text-animation">Напої</p>
+          <p class="sticky-text-animation">Сайди</p>
+          <p class="sticky-text-animation">Десерти</p>
+        </div>
+        <div class="cart">
+          <div class="cart-img">
+            <p>0</p>
+            <svg
+              width="33"
+              height="33"
+              viewBox="0 0 33 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="button-cart-img"
+            >
+              <path
+                d="M27.562 4.763a1.96 1.96 0 00-1.531-.732H4.689l-.19-1.366A1.977 1.977 0 002.548.97H.874a.875.875 0 000 1.75h1.673a.22.22 0 01.217.188l2.362 16.928a1.977 1.977 0 001.95 1.696h.948a2.628 2.628 0 002.475 3.5 2.628 2.628 0 002.474-3.5h4.676a2.628 2.628 0 002.474 3.5 2.628 2.628 0 002.475-3.5h1.9a.875.875 0 000-1.75H7.078a.22.22 0 01-.217-.188l-.218-1.562h17.232a1.98 1.98 0 001.925-1.556l2.157-10.062a1.96 1.96 0 00-.394-1.65zM11.375 22.406a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm9.625 0a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm5.245-16.36l-2.157 10.062a.22.22 0 01-.214.173H6.398l-1.465-10.5H26.03c.086 0 .14.044.17.081.03.038.062.1.044.184z"
+                fill="#222"
+              ></path>
+            </svg>
+          </div>
+          <div class="cart-order">
+            <p>Замовити</p>
+          </div>
         </div>
       </div>
 
@@ -139,16 +160,17 @@
               </p>
               <div class="button-pizza">
                 <button class="button">Стандарт</button>
-                <div class="button">Велика</div>
-                <div class="button">Екстравелика</div>
+                <button class="button">Велика</button>
+                <button class="button">Екстравелика</button>
               </div>
 
               <div class="dough">
                 <p>Тісто</p>
-                <div class="button-dough">Пухке</div>
-                <div class="button-dough">Тонке</div>
+                <button class="button-dough-bort">Пухке</button>
+                <button class="button-dough-bort">Тонке</button>
               </div>
               <div class="to-cart">
+                <!-- MAKE KART -->
                 <div></div>
               </div>
             </div>
