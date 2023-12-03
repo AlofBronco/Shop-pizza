@@ -1,5 +1,9 @@
 function itemCreator() {
-  window.location.href = "../html/create.html";
+  window.location.href = "../html/pizza-creator.html";
+}
+
+function miniGame() {
+  window.location.href = "../html/minigame.html";
 }
 
 // ITEM SLIDER: DO NOT TOUCH SOMETHING, BECAUSE IT CAN BREAKE
@@ -18,8 +22,6 @@ function updateCarousel() {
   carouselContainer.style.transform = `translateX(${translateValue}%)`;
 }
 
-// Automatically advance to the next slide every 7 seconds
 setInterval(nextSlide, 7000);
 
-// Initial setup
 updateCarousel();
