@@ -156,6 +156,46 @@
           <div class="dot"></div>
           <div class="dot"></div>
         </div>
+        <div class="filter-sort">
+          <button class="filter">
+            <svg
+              width="28"
+              height="28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="filter-svg"
+            >
+              <path
+                d="M10.665 13.231c.294.32.455.738.455 1.17v12.732c0 .767.925 1.155 1.472.617l3.552-4.07c.475-.571.737-.853.737-1.418v-7.859c0-.432.164-.85.455-1.17L27.528 2.176c.764-.83.176-2.175-.953-2.175H1.426C.297 0-.294 1.342.473 2.175L10.665 13.23z"
+                fill="#000"
+                fill-opacity="0.61"
+              ></path>
+            </svg>
+            <p>Фільтр</p>
+          </button>
+          <button class="sort">
+            <p class="sort-text">Сортувати</p>
+            <svg
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="sort-arrow"
+            >
+              <path
+                d="M1 1l5 5 5-5"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="title-pizza">
+          <p>Піца</p>
+        </div>
+        <div class="new-pizza">
+          <p>Новинки</p>
+        </div>
         <div class="grid">
           <div class="item">
             <img
@@ -169,21 +209,24 @@
                 Моцарела, Болгарський перець, Помідори, Огірки мариновані, Соус Барбекю, Кріспі
                 цибулька Яловичина
               </p>
-              <div class="button-pizza">
-                <button class="button">Стандарт</button>
+              <div class="button-pizza button-group">
+                <button class="button button-active">Стандарт</button>
                 <button class="button">Велика</button>
                 <button class="button">Екстравелика</button>
+                <button class="button">Найбільша</button>
               </div>
 
-              <div class="dough">
-                <p class="text-dough-bort">Тісто</p>
-                <button class="button-dough-bort">Пухке</button>
-                <button class="button-dough-bort">Тонке</button>
-              </div>
-              <div class="bort">
-                <p class="text-dough-bort">Борт</p>
-                <button class="button-dough-bort">Філадельфія</button>
-                <button class="button-dough-bort">Борт Хот-Дог</button>
+              <div class="button-group">
+                <div class="dough">
+                  <p class="text-dough-bort">Тісто</p>
+                  <button class="button button-active">Пухке</button>
+                  <button class="button">Тонке</button>
+                </div>
+                <div class="bort">
+                  <p class="text-dough-bort">Борт</p>
+                  <button class="button">Філадельфія</button>
+                  <button class="button">Борт Хот-Дог</button>
+                </div>
               </div>
               <div class="price-cart">
                 <p class="price">314.00 грн</p>

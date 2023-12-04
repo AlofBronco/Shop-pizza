@@ -240,6 +240,8 @@ header {
   justify-content: center;
 
   gap: 10px;
+
+  margin-bottom: 20px;
 }
 
 .dot {
@@ -255,6 +257,100 @@ header {
 
 .dot-active {
   background-color: #fe0021;
+}
+
+.filter-sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-bottom: 20px;
+}
+
+.filter {
+  width: 240px;
+
+  padding: 5px;
+  margin-left: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 85px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: border-color 0.3s ease;
+}
+
+.filter-svg {
+  transform: scale(0.8);
+}
+
+.filter:hover {
+  border-color: #4f4f4f;
+}
+
+.sort {
+  width: 240px;
+
+  padding: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 85px;
+
+  font-size: 14px;
+
+  transition: border-color 0.3s ease;
+}
+
+.sort-text {
+  display: flex;
+  flex: 1 1 0%;
+  justify-content: start;
+
+  padding-left: 15px;
+}
+
+.sort-arrow {
+  width: 12px;
+  height: 7px;
+}
+
+.sort:hover {
+  border-color: #4f4f4f;
+}
+
+.title-pizza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+.new-pizza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .grid {
@@ -305,10 +401,11 @@ header {
 
 .button-pizza {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .button {
-  border: 1px solid rgb(190, 190, 190);
+  border: 1px solid #bebebe;
   border-radius: 22px;
 
   background-color: #fff;
@@ -320,10 +417,18 @@ header {
   margin: 5px;
 
   height: 35px;
+  width: calc(33.33% - 10px);
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
+}
+
+.button-active {
+  background-color: #4f4f4f !important;
+  color: #fff !important;
 }
 
 .dough {
@@ -337,25 +442,6 @@ header {
 
   font-size: 13px;
   margin-right: 5px;
-}
-
-.button-dough-bort {
-  border: 1px solid rgb(190, 190, 190);
-  border-radius: 22px;
-
-  background-color: #fff;
-
-  flex: 1 1 0%;
-
-  font-size: 13px;
-
-  margin: 5px;
-
-  height: 35px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .bort {
@@ -389,6 +475,7 @@ header {
   justify-content: center;
 
   width: 60%;
+  height: 40px;
 
   background-color: #fe0021;
   color: #fff;
@@ -396,6 +483,14 @@ header {
   border-radius: 100px;
 
   margin-left: 20px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.to-cart:hover {
+  background-color: #be171b;
 }
 
 .to-cart-svg {

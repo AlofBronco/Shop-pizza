@@ -25,3 +25,19 @@ function updateCarousel() {
 setInterval(nextSlide, 7000);
 
 updateCarousel();
+
+// JQUERY CODE =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+$(document).ready(function () {
+  $(".button-group").on("click", ".button", function () {
+    let parentGroup = $(this).closest(".button-group");
+    $(".button", parentGroup).removeClass("button-active");
+
+    $(this).addClass("button-active");
+
+    let newPrice = parseFloat($(this).data("price"));
+    $(".price").text(newPrice.toFixed(2) + " грн");
+  });
+});
+
+// JQUERY CODE =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
