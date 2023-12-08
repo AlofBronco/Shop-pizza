@@ -13,7 +13,14 @@ const carouselItems = document.querySelectorAll(".carousel-item");
 let currentIndex = 0;
 
 function nextSlide() {
+  let currentButton = document.querySelector(`#dot${currentIndex}`);
+  currentButton.classList.remove("dot-active");
+
   currentIndex = (currentIndex + 1) % carouselItems.length;
+
+  let afterButton = document.querySelector(`#dot${currentIndex}`);
+  afterButton.classList.add("dot-active");
+
   updateCarousel();
 }
 
@@ -30,33 +37,49 @@ updateCarousel();
 
 $(document).ready(function () {
   $(".button-group").on("click", ".button", function () {
+    let item = $(this).closest(".item");
+
     let parentGroup = $(this).closest(".button-group");
-    $(".button", parentGroup).removeClass("button-active");
+    $(".button", parentGroup, item).removeClass("button-active");
 
     $(this).addClass("button-active");
   });
 
   $(".button-largest").on("click", function () {
-    $(".button-fluff").removeClass("button-active");
+    let item = $(this).closest(".item");
+
+    $(".button-fluff", item).removeClass("button-active");
 
     let parentGroup = $(this).closest(".button-group");
-    $(".button", parentGroup).removeClass("button-active");
+    $(".button", parentGroup, item).removeClass("button-active");
 
-    $(".button-fluff").css("cursor", "not-allowed");
-    $(".button-fluff").prop("disabled", true);
+    $(".button-fluff", item).css("cursor", "not-allowed");
+    $(".button-fluff", item).prop("disabled", true);
 
-    if (!$(".button-fluff").hasClass("button-active")) {
-      $(".button").removeClass("button-active");
-      $(".button-thin").addClass("button-active");
+    if (!$(".button-fluff", item).hasClass("button-active")) {
+      $(".button", item).removeClass("button-active");
+      $(".button-thin", item).addClass("button-active");
     }
   });
 
   $(".button-smaller").on("click", function () {
-    $(".button-fluff").prop("disabled", false);
-    $(".button-fluff").css("cursor", "pointer");
+    let item = $(this).closest(".item");
+    $(".button-fluff", item).prop("disabled", false);
+    $(".button-fluff", item).css("cursor", "pointer");
 
-    $(".button").removeClass("button-active");
-    $(".button-fluff").addClass("button-active");
+    $(".button", item).removeClass("button-active");
+    $(".button-fluff", item).addClass("button-active");
+  });
+
+  $(".dot").on("click", function () {
+    let dotId = $(this).attr("id");
+    let dotNum = parseInt(dotId[dotId.length - 1]);
+
+    let currentButton = document.querySelector(`#dot${currentIndex}`);
+    currentButton.classList.remove("dot-active");
+
+    currentIndex = (dotNum + 6) % carouselItems.length;
+    nextSlide();
   });
 });
 

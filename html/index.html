@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fake Domino's Pizza</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://dominos.ua/favicon.ico" rel="shortcut icon" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -49,9 +50,9 @@
             <p id="location">Київ</p>
           </div>
 
-          <div class="pizza-sushi-track">
+          <div class="pizza-track">
             <!-- MAKE ANCHOR TO THE TRACKER PAGE -->
-            <a href="#" id="pizza-sushi-track-a"><p id="pizza-sushi-track">PIZZA TRACKER</p></a>
+            <a href="#" id="pizza-track-a"><p id="pizza-track">PIZZA TRACKER</p></a>
           </div>
 
           <div class="news">
@@ -148,13 +149,13 @@
           </div>
         </div>
         <div class="slider-dots">
-          <div class="dot dot-active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <div id="dot0" class="dot dot-active"></div>
+          <div id="dot1" class="dot"></div>
+          <div id="dot2" class="dot"></div>
+          <div id="dot3" class="dot"></div>
+          <div id="dot4" class="dot"></div>
+          <div id="dot5" class="dot"></div>
+          <div id="dot6" class="dot"></div>
         </div>
         <div class="filter-sort">
           <button class="filter">
@@ -197,7 +198,60 @@
           <p>Новинки</p>
         </div>
         <div class="grid">
-          <div class="item">
+          <div class="item" id="item1">
+            <img
+              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2FbeefandCrispy%2Fnew%2Fbeefandcrispy-pieces.webp&w=480&q=75"
+              alt=""
+              class="pizza"
+            />
+            <div class="pizza-information">
+              <p class="title">Піца Біф енд Кріспі</p>
+              <p class="under-title">
+                Моцарела, Болгарський перець, Помідори, Огірки мариновані, Соус Барбекю, Кріспі
+                цибулька Яловичина
+              </p>
+              <div class="button-pizza button-group">
+                <button class="button button-active button-smaller">Стандарт</button>
+                <button class="button button-smaller">Велика</button>
+                <button class="button button-smaller">Екстравелика</button>
+                <button class="button button-largest">Найбільша</button>
+              </div>
+
+              <div class="button-group button-group-dough">
+                <div class="dough">
+                  <p class="text-dough-bort">Тісто</p>
+                  <button class="button button-active button-fluff">Пухке</button>
+                  <button class="button button-thin">Тонке</button>
+                </div>
+                <div class="bort">
+                  <p class="text-dough-bort">Борт</p>
+                  <button class="button">Філадельфія</button>
+                  <button class="button">Борт Хот-Дог</button>
+                </div>
+              </div>
+              <div class="price-cart">
+                <p class="price">314.00 грн</p>
+
+                <div class="to-cart">
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="to-cart-svg"
+                  >
+                    <path
+                      d="M27.562 4.763a1.96 1.96 0 00-1.531-.732H4.689l-.19-1.366A1.977 1.977 0 002.548.97H.874a.875.875 0 000 1.75h1.673a.22.22 0 01.217.188l2.362 16.928a1.977 1.977 0 001.95 1.696h.948a2.628 2.628 0 002.475 3.5 2.628 2.628 0 002.474-3.5h4.676a2.628 2.628 0 002.474 3.5 2.628 2.628 0 002.475-3.5h1.9a.875.875 0 000-1.75H7.078a.22.22 0 01-.217-.188l-.218-1.562h17.232a1.98 1.98 0 001.925-1.556l2.157-10.062a1.96 1.96 0 00-.394-1.65zM11.375 22.406a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm9.625 0a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm5.245-16.36l-2.157 10.062a.22.22 0 01-.214.173H6.398l-1.465-10.5H26.03c.086 0 .14.044.17.081.03.038.062.1.044.184z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                  <p>В кошик</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" id="item2">
             <img
               src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2FbeefandCrispy%2Fnew%2Fbeefandcrispy-pieces.webp&w=480&q=75"
               alt=""
