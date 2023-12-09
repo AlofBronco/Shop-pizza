@@ -100,7 +100,7 @@ header {
   height: 70px;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 11;
 
   display: flex;
   align-items: center;
@@ -158,6 +158,8 @@ header {
 
   border: 2px solid #bababa;
   border-radius: 32px;
+
+  margin-right: 15px;
 }
 
 .cart-img {
@@ -508,10 +510,14 @@ footer {
   background-color: #222;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 
   padding: 40px;
-  gap: 100px;
+}
+
+.download-app {
+  display: flex;
+  flex-direction: column;
 }
 
 .download-app-text {
@@ -531,7 +537,10 @@ footer {
 .download-app-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+
+  flex: 1;
 
   gap: 5px;
 }
@@ -564,6 +573,7 @@ footer {
 .services-other,
 .services-other-2 {
   display: flex;
+  align-items: center;
   gap: 6px;
 }
 
@@ -588,6 +598,7 @@ footer {
 
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 15px;
 }
 
@@ -629,6 +640,8 @@ footer {
   color: #fff;
   font-weight: bold;
 
+  height: 45px;
+
   background-color: #444;
 
   padding: 14px;
@@ -650,6 +663,7 @@ footer {
   flex: 20%;
 
   width: 40%;
+  height: 45px;
 
   color: #fff;
   font-weight: bold;
@@ -680,4 +694,253 @@ footer {
   gap: 15px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.none-2,
+.none-3 {
+  display: none;
+}
+
+.download-app-icons-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.download-app-icons-positioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.services-payment-positioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-app-text-positioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social-medias-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stick-small {
+  background-color: #222;
+
+  position: sticky;
+  top: 0;
+  z-index: 11;
+
+  padding: 10px;
+
+  display: none;
+}
+
+.stick-small-burger {
+  cursor: pointer;
+
+  height: 15px;
+}
+
+.stick-small-logo-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stick-small-logo {
+  transform: scale(0.8);
+  width: auto;
+}
+
+.location-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: scale(0.8);
+
+  cursor: pointer;
+}
+
+.stick-small-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-img-small {
+  background-color: transparent;
+  border: none;
+
+  height: 20px;
+  width: 20px;
+
+  transform: scale(1.3);
+
+  cursor: pointer;
+}
+
+.stick-small-var {
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1130px) {
+  .wrapper-slider {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .sticky-text {
+    flex: 70%;
+  }
+
+  .cart {
+    flex: 30%;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    gap: 8px;
+  }
+
+  .download-app-icons {
+    transform: scale(0.8);
+  }
+
+  .download-app-text {
+    margin-bottom: 0;
+  }
+
+  .services-other-svg {
+    transform: scale(0.8);
+  }
+
+  .other-info-footer-button,
+  .other-info-footer-button-2 {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    justify-content: space-between;
+  }
+
+  .news-footer {
+    display: none;
+  }
+
+  .download-app {
+    display: none;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .none-1 {
+    display: none;
+  }
+
+  .none-2 {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .none-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .useful-info {
+    font-size: 0.9rem;
+  }
+
+  .other-info-footer {
+    font-size: 0.9rem;
+  }
+
+  .social-medias {
+    height: auto;
+    color: #fff;
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+  .social-medias-positioning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .social-i-tired {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    display: none;
+  }
+
+  .stick {
+    display: none;
+  }
+
+  .stick-small {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .other-info-footer-button-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .other-info-footer-button-2 {
+    flex: none;
+    width: auto;
+  }
+
+  .none-2 {
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .download-app-icons-positioning {
+    flex-wrap: wrap;
+  }
+
+  .filter {
+    width: 180px;
+  }
+
+  .sort {
+    width: 180px;
+  }
 }
