@@ -1,11 +1,3 @@
-function itemCreator() {
-  window.location.href = "../html/pizza-creator.html";
-}
-
-function miniGame() {
-  window.location.href = "../html/minigame.html";
-}
-
 // ITEM SLIDER: DO NOT TOUCH SOMETHING, BECAUSE IT CAN BREAKE
 
 const carouselContainer = document.querySelector(".slider");

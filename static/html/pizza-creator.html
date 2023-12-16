@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fake Domino's Pizza</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pizza-creator.css" />
     <link href="https://dominos.ua/favicon.ico" rel="shortcut icon" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -65,7 +65,7 @@
         <div class="buttons">
           <button id="login">Увійти</button>
 
-          <button id="item-creator" onclick="itemCreator()">Конструктор піци</button>
+          <a href="/"> <button id="item-creator">Купити піцу</button></a>
         </div>
       </header>
       <div class="stick">
@@ -118,7 +118,6 @@
           </div>
         </div>
       </div>
-
       <div class="stick-small">
         <div class="stick-small-info">
           <div class="stick-small-burger">
@@ -198,203 +197,155 @@
       </div>
 
       <main>
-        <div class="wrapper-slider">
-          <div class="slider">
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2Fsalat%2Fsaladsareback-slider-pc-ukr.webp&w=1560&q=75"
-              alt=""
-              class="carousel-item"
-            />
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2FMafin%20za%205%20%2Fmafin-kava-slider-pc-ukr.webp&w=1200&q=75"
-              alt=""
-              class="carousel-item"
-            />
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2FBilshe%20Pits-Bilsha%20Znyzhka%2Fmorepizzasdiscountkyiv-slider-pc-ukr.webp&w=1560&q=75"
-              alt=""
-              class="carousel-item"
-            />
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FKyiv%2F199-169%2F169and199togo-slider-pc-ukr.webp&w=1560&q=75"
-              alt=""
-              class="carousel-item"
-            />
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FALL%20regions%2Fsous%2Fnewsauces-slider-pc-ukr.webp&w=1200&q=75"
-              alt=""
-              class="carousel-item"
-            />
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FALL%20regions%2Fkrashcha%20tsina%20chiken%2Fnewinbestpricenov2023-slider-pc-ukr.webp&w=1200&q=75"
-              alt=""
-              class="carousel-item"
-            />
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FMainSlider%2FALL%20regions%2FKrispi%2Fkrispi-slider-pc-ukr.webp&w=1560&q=75"
-              alt=""
-              class="carousel-item"
-            />
-          </div>
-        </div>
-        <div class="slider-dots">
-          <div id="dot0" class="dot dot-active"></div>
-          <div id="dot1" class="dot"></div>
-          <div id="dot2" class="dot"></div>
-          <div id="dot3" class="dot"></div>
-          <div id="dot4" class="dot"></div>
-          <div id="dot5" class="dot"></div>
-          <div id="dot6" class="dot"></div>
-        </div>
-        <div class="filter-sort">
-          <button class="filter">
-            <svg
-              width="28"
-              height="28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="filter-svg"
-            >
-              <path
-                d="M10.665 13.231c.294.32.455.738.455 1.17v12.732c0 .767.925 1.155 1.472.617l3.552-4.07c.475-.571.737-.853.737-1.418v-7.859c0-.432.164-.85.455-1.17L27.528 2.176c.764-.83.176-2.175-.953-2.175H1.426C.297 0-.294 1.342.473 2.175L10.665 13.23z"
-                fill="#000"
-                fill-opacity="0.61"
-              ></path>
-            </svg>
-            <p>Фільтр</p>
-          </button>
-          <button class="sort">
-            <p class="sort-text">Сортувати</p>
-            <svg
-              viewBox="0 0 12 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="sort-arrow"
-            >
-              <path
-                d="M1 1l5 5 5-5"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div class="title-pizza">
-          <p>Піца</p>
-        </div>
-        <div class="new-pizza">
-          <p>Новинки</p>
-        </div>
-        <div class="grid">
-          <div class="item" id="item1">
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2FbeefandCrispy%2Fnew%2Fbeefandcrispy-pieces.webp&w=480&q=75"
-              alt=""
-              class="pizza"
-            />
-            <div class="pizza-information">
-              <p class="title">Піца Біф енд Кріспі</p>
-              <p class="under-title">
-                Моцарела, Болгарський перець, Помідори, Огірки мариновані, Соус Барбекю, Кріспі
-                цибулька Яловичина
-              </p>
-              <div class="button-pizza button-group">
-                <button class="button button-active button-smaller">Стандарт</button>
-                <button class="button button-smaller">Велика</button>
-                <button class="button button-smaller">Екстравелика</button>
-                <button class="button button-largest">Найбільша</button>
-              </div>
-
-              <div class="button-group button-group-dough">
-                <div class="dough">
-                  <p class="text-dough-bort">Тісто</p>
-                  <button class="button button-active button-fluff">Пухке</button>
-                  <button class="button button-thin">Тонке</button>
-                </div>
-                <div class="bort">
-                  <p class="text-dough-bort">Борт</p>
-                  <button class="button">Філадельфія</button>
-                  <button class="button">Борт Хот-Дог</button>
-                </div>
-              </div>
-              <div class="price-cart">
-                <p class="price">314.00 грн</p>
-
-                <div class="to-cart">
-                  <svg
-                    width="33"
-                    height="33"
-                    viewBox="0 0 33 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="to-cart-svg"
-                  >
-                    <path
-                      d="M27.562 4.763a1.96 1.96 0 00-1.531-.732H4.689l-.19-1.366A1.977 1.977 0 002.548.97H.874a.875.875 0 000 1.75h1.673a.22.22 0 01.217.188l2.362 16.928a1.977 1.977 0 001.95 1.696h.948a2.628 2.628 0 002.475 3.5 2.628 2.628 0 002.474-3.5h4.676a2.628 2.628 0 002.474 3.5 2.628 2.628 0 002.475-3.5h1.9a.875.875 0 000-1.75H7.078a.22.22 0 01-.217-.188l-.218-1.562h17.232a1.98 1.98 0 001.925-1.556l2.157-10.062a1.96 1.96 0 00-.394-1.65zM11.375 22.406a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm9.625 0a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm5.245-16.36l-2.157 10.062a.22.22 0 01-.214.173H6.398l-1.465-10.5H26.03c.086 0 .14.044.17.081.03.038.062.1.044.184z"
-                      fill="#fff"
-                    ></path>
-                  </svg>
-                  <p>В кошик</p>
-                </div>
-              </div>
+        <div class="main-wrapper">
+          <div class="your-pizza">
+            <div class="your-pizza-img">
+              <img
+                src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fbasa.webp&w=600&q=75"
+                alt=""
+                class="your-pizza-img-img"
+              />
             </div>
-          </div>
-          <div class="item" id="item2">
-            <img
-              src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2FbeefandCrispy%2Fnew%2Fbeefandcrispy-pieces.webp&w=480&q=75"
-              alt=""
-              class="pizza"
-            />
-            <div class="pizza-information">
-              <p class="title">Піца Біф енд Кріспі</p>
-              <p class="under-title">
-                Моцарела, Болгарський перець, Помідори, Огірки мариновані, Соус Барбекю, Кріспі
-                цибулька Яловичина
-              </p>
-              <div class="button-pizza button-group">
-                <button class="button button-active button-smaller">Стандарт</button>
-                <button class="button button-smaller">Велика</button>
-                <button class="button button-smaller">Екстравелика</button>
-                <button class="button button-largest">Найбільша</button>
+            <div class="your-pizza-main">
+              <p class="your-pizza-main-bold">Твоя піца</p>
+              <p class="your-pizza-main-lite">Інгредієнти вашої піци:</p>
+              <div class="ingredients">
+                <!-- MAKE INGREDIENT SYSTEM -->
               </div>
-
-              <div class="button-group button-group-dough">
+              <div class="size">
+                <p class="transparent">Розмір</p>
+                <div class="size-buttons button-group">
+                  <button class="your-pizza-button button-active button-smaller">Стандарт</button>
+                  <button class="your-pizza-button button-smaller">Велика</button>
+                  <button class="your-pizza-button button-smaller">Екстравелика</button>
+                  <button class="your-pizza-button button-largest">Найбільша</button>
+                </div>
+              </div>
+              <div class="dough-bort button-group">
                 <div class="dough">
-                  <p class="text-dough-bort">Тісто</p>
-                  <button class="button button-active button-fluff">Пухке</button>
-                  <button class="button button-thin">Тонке</button>
+                  <p class="transparent">Тісто</p>
+                  <div class="dough-buttons">
+                    <button class="your-pizza-button button-active button-fluff">Пухке</button>
+                    <button class="your-pizza-button button-thin">Тонке</button>
+                  </div>
                 </div>
                 <div class="bort">
-                  <p class="text-dough-bort">Борт</p>
-                  <button class="button">Філадельфія</button>
-                  <button class="button">Борт Хот-Дог</button>
+                  <p class="transparent">Борт</p>
+                  <div class="bort-buttons">
+                    <button class="your-pizza-button">Філадельфія</button>
+                    <button class="your-pizza-button">Борт Хот-Дог</button>
+                  </div>
                 </div>
               </div>
-              <div class="price-cart">
-                <p class="price">314.00 грн</p>
-
-                <div class="to-cart">
-                  <svg
-                    width="33"
-                    height="33"
-                    viewBox="0 0 33 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="to-cart-svg"
-                  >
-                    <path
-                      d="M27.562 4.763a1.96 1.96 0 00-1.531-.732H4.689l-.19-1.366A1.977 1.977 0 002.548.97H.874a.875.875 0 000 1.75h1.673a.22.22 0 01.217.188l2.362 16.928a1.977 1.977 0 001.95 1.696h.948a2.628 2.628 0 002.475 3.5 2.628 2.628 0 002.474-3.5h4.676a2.628 2.628 0 002.474 3.5 2.628 2.628 0 002.475-3.5h1.9a.875.875 0 000-1.75H7.078a.22.22 0 01-.217-.188l-.218-1.562h17.232a1.98 1.98 0 001.925-1.556l2.157-10.062a1.96 1.96 0 00-.394-1.65zM11.375 22.406a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm9.625 0a.876.876 0 01-1.75 0 .876.876 0 011.75 0zm5.245-16.36l-2.157 10.062a.22.22 0 01-.214.173H6.398l-1.465-10.5H26.03c.086 0 .14.044.17.081.03.038.062.1.044.184z"
-                      fill="#fff"
-                    ></path>
-                  </svg>
-                  <p>В кошик</p>
+              <div class="ingredient-sort">
+                <button class="ingredient-button ingredient-active">Всі</button>
+                <button class="ingredient-button">Соуси</button>
+                <button class="ingredient-button">М'ясо</button>
+                <button class="ingredient-button">Овочі</button>
+                <button class="ingredient-button">Сир</button>
+              </div>
+              <div class="ingredients-2">
+                <div class="sauce">
+                  <p class="text-ing">Соуси</p>
+                  <div class="sauce-wrapper">
+                    <div class="sauce-dominos ingredient">
+                      <img
+                        src="https://dominos.ua/_next/image/?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fsous-domynos.webp&w=256&q=75"
+                        alt=""
+                        class="ingredient-img"
+                      />
+                      <div class="ingredient-info">
+                        <p>Соус Domino's</p>
+                        <div class="ingredient-amount-wrapper">
+                          <div class="ingredient-amount">
+                            <div class="svg-box minus">
+                              <svg
+                                width="11"
+                                height="3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="ingredient-info-svg"
+                              >
+                                <path d="M0 1.5h11" stroke="#000" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                            <p class="ingredient-number">0</p>
+                            <div class="svg-box plus">
+                              <svg
+                                viewBox="0 0 11 11"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                color="#000"
+                                height="11"
+                                width="11"
+                                class="ingredient-info-svg"
+                              >
+                                <path
+                                  d="M5.5 0v11M0 5.5h11"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sauce-alfredo ingredient"></div>
+                    <div class="sauce-garlic ingredient"></div>
+                    <div class="sauce-bbq ingredient"></div>
+                  </div>
+                </div>
+                <div class="meat">
+                  <p class="text-ing">М'ясо</p>
+                  <div class="meat-wrapper">
+                    <div class="meat-white ingredient"></div>
+                    <div class="meat-peperoni ingredient"></div>
+                    <div class="meat-bavar ingredient"></div>
+                    <div class="meat-bacon ingredient"></div>
+                    <div class="meat-ham ingredient"></div>
+                    <div class="meat-turkey ingredient"></div>
+                    <div class="meat-chicken ingredient"></div>
+                    <div class="meat-tuna ingredient"></div>
+                    <div class="meat-meatballs ingredient"></div>
+                    <div class="meat-veal ingredient"></div>
+                    <div class="meat-chorizo ingredient"></div>
+                  </div>
+                </div>
+                <div class="vegetable">
+                  <p class="text-ing">Овочі</p>
+                  <div class="vegetable-wrapper">
+                    <div class="vegetable-corn ingredient"></div>
+                    <div class="vegetable-crispy-onion ingredient"></div>
+                    <div class="vegetable-paprika ingredient"></div>
+                    <div class="vegetable-onion ingredient"></div>
+                    <div class="vegetable-mustard ingredient"></div>
+                    <div class="vegetable-tomato ingredient"></div>
+                    <div class="vegetable-cucumber ingredient"></div>
+                    <div class="vegetable-spinach ingredient"></div>
+                    <div class="vegetable-jalapeno ingredient"></div>
+                    <div class="vegetable-pineapple ingredient"></div>
+                    <div class="vegetable-tomato-cherry ingredient"></div>
+                    <div class="vegetable-olive ingredient"></div>
+                    <div class="vegetable-mushrooms ingredient"></div>
+                  </div>
+                </div>
+                <div class="cheese">
+                  <p class="text-ing">Сир</p>
+                  <div class="cheese-wrapper">
+                    <div class="cheese-chedder ingredient"></div>
+                    <div class="cheese-feta ingredient"></div>
+                    <div class="cheese-parmesan ingredient"></div>
+                    <div class="cheese-blue ingredient"></div>
+                    <div class="cheese-mozzarella ingredient"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </main>
+
       <footer>
         <div class="download-app">
           <div class="download-app-text">
@@ -625,7 +576,8 @@
           </div>
           <div class="other-info-footer-button-wrapper">
             <button class="other-info-footer-button">Залишити відгук</button>
-            <button class="other-info-footer-button-2" onclick="miniGame()">Міні гра</button>
+
+            <a href="/minigame"> <button class="other-info-footer-button-2">Міні гра</button></a>
           </div>
         </div>
         <div class="useful-info none-2">
@@ -727,6 +679,6 @@
       </div>
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/pizza-creator.js"></script>
   </body>
 </html>

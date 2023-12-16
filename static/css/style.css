@@ -656,6 +656,11 @@ footer {
   border: 1px solid #555;
 }
 
+.other-info-footer-button-wrapper > a {
+  display: flex;
+  text-decoration: none;
+}
+
 .other-info-footer-button-2 {
   border: 1px solid #444;
   border-radius: 22px;

@@ -1,0 +1,858 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.telephone,
+.location,
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #222;
+
+  height: 70px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#telephone-img,
+#location-img {
+  margin-right: 2px;
+}
+
+#telephone,
+#location,
+#pizza-track,
+#news {
+  color: #fff;
+}
+
+#location,
+#pizza-track,
+#news,
+#telephone {
+  font-weight: bold;
+}
+
+#pizza-track-a,
+#news-a {
+  text-decoration: none;
+}
+
+.telephone,
+.location,
+.pizza-track {
+  margin-right: 40px;
+}
+
+#login {
+  margin-right: 10px;
+}
+
+#news {
+  color: #d52424;
+}
+
+#login,
+#item-creator {
+  border: 1px solid #444;
+  border-radius: 22px;
+
+  color: #fff;
+  font-weight: bold;
+
+  background-color: #444;
+
+  padding: 14px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+#login:hover,
+#item-creator:hover {
+  background-color: #555;
+  border: 1px solid #555;
+}
+
+.stick {
+  background-color: #fff;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+
+  display: flex;
+  align-items: center;
+}
+
+.image-sticky-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  width: 215px;
+}
+
+.image-sticky {
+  width: 70%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.sticky-text {
+  flex: 1;
+  height: 100%;
+
+  margin-left: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sticky-text-animation {
+  display: inline-block;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+.sticky-text-animation:hover {
+  transform: scale(1.1);
+}
+
+.cart {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-positioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #bababa;
+  border-radius: 32px;
+
+  margin-right: 15px;
+}
+
+.cart-img {
+  height: 40px;
+  width: 40px;
+
+  background-color: #4f4f4f;
+
+  border-radius: 32px;
+
+  margin-right: 2px;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+#cart-img-text {
+  color: #fff;
+}
+
+.button-cart-img {
+  margin-left: 2px;
+}
+
+.cart-order {
+  height: 40px;
+  width: 100px;
+
+  border-radius: 32px;
+
+  background-color: #fe0021;
+
+  font-size: 0.8rem;
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.cart-order:hover {
+  background-color: #be171b;
+}
+
+main {
+  overflow: hidden;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.your-pizza {
+  width: 90vw;
+
+  display: flex;
+  justify-content: center;
+}
+
+.your-pizza-img {
+  margin-right: 60px;
+}
+
+.your-pizza-img-img {
+  width: 425px;
+}
+
+.your-pizza-main {
+  width: 40vw;
+}
+
+.your-pizza-main-bold {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.your-pizza-main-lite {
+  font-size: 0.8rem;
+}
+
+.ingredients {
+  margin-bottom: 2px;
+}
+
+.size-buttons,
+.dough-buttons,
+.bort-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.transparent {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.size {
+  margin-bottom: 20px;
+}
+
+.your-pizza-button {
+  border-radius: 22px;
+  border: 1px solid #bebebe;
+
+  background-color: #ffffff;
+
+  padding: 8px 0px;
+
+  flex: 1;
+
+  cursor: pointer;
+}
+
+.button-active {
+  background-color: #4f4f4f;
+  color: #fff;
+}
+
+.dough-bort {
+  display: flex;
+  width: 35vw;
+
+  margin-bottom: 20px;
+}
+
+.dough,
+.bort {
+  flex: 1;
+}
+
+.dough {
+  margin-right: 5px;
+}
+
+.ingredient-sort {
+  margin-bottom: 60px;
+}
+
+.ingredient-button {
+  background-color: rgb(255, 255, 255);
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 11px 31px;
+
+  font-size: 0.7rem;
+  font-weight: 400;
+
+  border-radius: 12px;
+  border: none;
+
+  padding: 20px 10px;
+  margin-right: 9px;
+  margin-bottom: 9px;
+
+  min-width: 113px;
+  max-width: 170px;
+
+  cursor: pointer;
+
+  transition: color 0.1s ease, font-weight 0.1s ease;
+}
+
+.ingredient-active {
+  color: #fe0021;
+  font-weight: 800;
+}
+
+.ingredients-2 {
+  width: 45vw;
+}
+
+.text-ing {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.ingredient-img {
+  width: 90%;
+}
+
+.ingredient-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.ingredient-info > p {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.ingredient-amount-wrapper {
+  width: 100%;
+}
+
+.ingredient-amount {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 9px;
+
+  width: fit-content;
+
+  background-color: #e4e4e4;
+  border-radius: 12.5px;
+  padding: 6px 14px;
+}
+
+.ingredient-amount > p {
+  font-size: 0.8rem;
+}
+
+.svg-box {
+  height: 15px;
+  width: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.ingredient-info-svg {
+  transform: scale(0.7);
+}
+
+.sauce,
+.meat,
+.vegetable,
+.cheese {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 40px;
+}
+
+.sauce-wrapper,
+.meat-wrapper,
+.vegetable-wrapper,
+.cheese-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ingredient {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 12px 13px 13px;
+
+  height: 160px;
+  width: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #222;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 40px;
+}
+
+.download-app {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-app-text {
+  margin-bottom: 20px;
+}
+
+.download-app-img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#download-app-text {
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.download-app-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  flex: 1;
+
+  gap: 5px;
+}
+
+.news-footer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.news-footer-text {
+  color: #fff;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  color: #fff;
+}
+
+#services,
+#services-payment-text {
+  font-weight: bold;
+}
+
+.services-other,
+.services-other-2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.services-other-2 {
+  margin-bottom: 10px;
+}
+
+#services-payment-text {
+  margin-bottom: 5px;
+}
+
+.services-payment-img {
+  width: 50px;
+}
+
+.services-payment-img-margin {
+  margin-right: 20px;
+}
+
+.useful-info {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.useful-info-text {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.other-info-footer {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.other-info-footer-phone {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.other-info-footer-phone-2 {
+  font-size: 0.7rem;
+}
+
+.other-info-footer-location {
+  display: flex;
+}
+
+.other-info-footer-button-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.other-info-footer-button {
+  border: 1px solid #444;
+  border-radius: 22px;
+
+  color: #fff;
+  font-weight: bold;
+
+  height: 45px;
+
+  background-color: #444;
+
+  padding: 14px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.other-info-footer-button:hover {
+  background-color: #555;
+  border: 1px solid #555;
+}
+
+.other-info-footer-button-wrapper > a {
+  display: flex;
+  text-decoration: none;
+}
+
+.other-info-footer-button-2 {
+  border: 1px solid #444;
+  border-radius: 22px;
+
+  flex: 20%;
+
+  width: 40%;
+  height: 45px;
+
+  color: #fff;
+  font-weight: bold;
+
+  background-color: #444;
+
+  padding: 14px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.other-info-footer-button-2:hover {
+  background-color: #555;
+  border: 1px solid #555;
+}
+
+.social-medias {
+  height: 60px;
+
+  background-color: #222;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.none-2,
+.none-3 {
+  display: none;
+}
+
+.download-app-icons-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.download-app-icons-positioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.services-payment-positioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-app-text-positioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social-medias-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stick-small {
+  background-color: #222;
+
+  position: sticky;
+  top: 0;
+  z-index: 11;
+
+  padding: 10px;
+
+  display: none;
+}
+
+.stick-small-burger {
+  cursor: pointer;
+
+  height: 15px;
+}
+
+.stick-small-logo-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stick-small-logo {
+  transform: scale(0.8);
+  width: auto;
+}
+
+.location-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: scale(0.8);
+
+  cursor: pointer;
+}
+
+.stick-small-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-img-small {
+  background-color: transparent;
+  border: none;
+
+  height: 20px;
+  width: 20px;
+
+  transform: scale(1.3);
+
+  cursor: pointer;
+}
+
+.stick-small-var {
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1100px) {
+  .sticky-text {
+    flex: 70%;
+  }
+
+  .cart {
+    flex: 30%;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    gap: 8px;
+  }
+
+  .download-app-icons {
+    transform: scale(0.8);
+  }
+
+  .download-app-text {
+    margin-bottom: 0;
+  }
+
+  .services-other-svg {
+    transform: scale(0.8);
+  }
+
+  .other-info-footer-button,
+  .other-info-footer-button-2 {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    justify-content: space-between;
+  }
+
+  .news-footer {
+    display: none;
+  }
+
+  .download-app {
+    display: none;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .none-1 {
+    display: none;
+  }
+
+  .none-2 {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .none-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .useful-info {
+    font-size: 0.9rem;
+  }
+
+  .other-info-footer {
+    font-size: 0.9rem;
+  }
+
+  .social-medias {
+    height: auto;
+    color: #fff;
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+  .social-medias-positioning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .social-i-tired {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    display: none;
+  }
+
+  .stick {
+    display: none;
+  }
+
+  .stick-small {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .other-info-footer-button-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .other-info-footer-button-2 {
+    flex: none;
+    width: auto;
+  }
+
+  .none-2 {
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .download-app-icons-positioning {
+    flex-wrap: wrap;
+  }
+}
