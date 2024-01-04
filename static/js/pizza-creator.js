@@ -1,3 +1,16 @@
+let prices;
+let totalPrice = 0;
+let previousPizzaPrice = 0;
+
+axios
+  .get("http://localhost:3000/api/fillings")
+  .then((res) => {
+    prices = res.data;
+  })
+  .catch((error) => {
+    console.error("Error fetching prices:", error);
+  });
+
 // JQUERY CODE =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $(document).ready(function () {
   $(".button-group").on("click", ".your-pizza-button", function () {

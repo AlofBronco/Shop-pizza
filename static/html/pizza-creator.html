@@ -11,6 +11,7 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -65,7 +66,7 @@
         <div class="buttons">
           <button id="login">Увійти</button>
 
-          <a href="/"> <button id="item-creator">Купити піцу</button></a>
+          <a href="/"><button id="item-creator">Купити піцу</button></a>
         </div>
       </header>
       <div class="stick">
@@ -215,9 +216,13 @@
               <div class="size">
                 <p class="transparent">Розмір</p>
                 <div class="size-buttons button-group">
-                  <button class="your-pizza-button button-active button-smaller">Стандарт</button>
-                  <button class="your-pizza-button button-smaller">Велика</button>
-                  <button class="your-pizza-button button-smaller">Екстравелика</button>
+                  <button class="your-pizza-button button-active button-smaller button-standart">
+                    Стандарт
+                  </button>
+                  <button class="your-pizza-button button-smaller button-big">Велика</button>
+                  <button class="your-pizza-button button-smaller button-extrabig">
+                    Екстравелика
+                  </button>
                   <button class="your-pizza-button button-largest">Найбільша</button>
                 </div>
               </div>
@@ -338,6 +343,17 @@
                     <div class="cheese-parmesan ingredient"></div>
                     <div class="cheese-blue ingredient"></div>
                     <div class="cheese-mozzarella ingredient"></div>
+                  </div>
+                </div>
+                <div class="additional">
+                  <p class="add-price">Додатки:</p>
+                  <div class="price-wrapper">
+                    <p class="price-p">Сума:</p>
+                    <p class="price">0 грн</p>
+                  </div>
+                  <div class="buttons-price">
+                    <button class="button-price">Очистити</button>
+                    <button class="button-price-2">В кошик</button>
                   </div>
                 </div>
               </div>
